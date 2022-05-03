@@ -1,0 +1,39 @@
+version: "3.1"
+
+stories:
+
+- story: greet_story
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_get_started
+
+- story: size_info
+  steps:
+    - intent: size_question
+    - action: utter_size_info
+
+- story: preise_info
+  steps:
+    - intent: preise_question 
+    - action: utter_preise_count
+    - action: utter_preise_type
+
+- story: address_info
+  steps:
+    - intent: location_question 
+    - action: utter_location
+    - action: utter_location_question
+    - intent: affirm
+    - action: utter_location_Bonn
+    - action: utter_location_Darmstadt
+
+- story: client_detail
+  steps:
+    - intent: client_question
+    - action: utter_client_count
+    - action: utter_client_type
+    
+
+
+

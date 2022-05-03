@@ -1,0 +1,66 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - client_question
+  - size_question
+  - preise_question
+  - location_question
+  - bot_challenge
+#slots:
+#  client_category:
+#    type: text
+responses:
+  utter_greet:
+  - text: "Hallo, ich heiße Owl. der Axxessio-Bot!"
+  - text: "Hi, ich bin Owl! der Axxessio-Bot!"
+  - text: "Hallo! Ich heiße Owl. der Axxessio-Bot!"
+
+  utter_get_started:
+  - text: "Sie können mir Fragen zu Axxessio stellen. Möchten wir anfangen?"
+  - text: "Ich kann Sie über verschiedene Informationen zu Axxessio informieren. Möchten wir anfangen?"
+  - text: "Ich soll grundlegende Informationen über Axxessio beantworten. Möchten wir anfangen?"
+ 
+  utter_goodbye:
+  - text: "Auf Wiedersehen"
+
+  utter_size_info:
+  - text: "Axxessio ist ein mittelstandisches firma"
+  - text: "Axxessio hat von 51 bis 200 mitarbeiter"
+  
+  utter_preise_count:
+  - text: "Axxessio hat viele verschiedene Preise gewonnen"
+  
+  utter_preise_type:
+  - text: "z.b. in 2021 Großen Preis des Mittelstandes ausgezeichnet"
+
+  utter_client_count:
+  - text: "Axxessio hat mit viele Kunden in verschiedenen Kategorie gearbeitet"
+
+  utter_location:
+  - text: "Axxessio hat zwei Niederlassungen in Deutschland Haupsitz in Bonn und Niederlassung im Darmstadt."
+
+  utter_location_question:
+  - text: "Brauchen sie die Addresse?"
+  
+  utter_location_Bonn:
+  - text: "Kurfürstenallee 5 • 53177 Bonn"
+  
+  utter_location_Darmstadt:
+  - text: "Hilpertstraße 20 • 64295 Darmstadt"
+
+
+  utter_client_type:
+  - text: "z.b. Watt, HRS Hotelportal, Telekom, DHL etc"
+
+  utter_iamabot:
+  - text: "Jep, ich bin ein Bot!"
+  - text: "Ja, ich bin ein Bot."
+  - text: "Ja, du hast es erraten, ich bin ein Bot!"
+  - text: "Ich bin in der Tat ein Bot 🤖"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,352 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - Hallo
+    - Hallo du
+    - Hallo Bot
+    - Hey Bot
+    - Hallo Junge
+    - Guten Morgen
+    - Hallo nochmal
+    - Hallo Leute
+    - Hallo Herr
+    - Hi, Kumpel!
+    - Schöne Grüße
+    - Hallo zusammen
+    - Hallo ist da jemand
+    - Hallo Roboter
+    - Hallole
+    - Hey
+    - hi hi
+    - Hallodio
+    - Hey, hey
+    - hi
+    - Hallö
+    - yo
+    - Hallo süße
+    - Hallo?
+    - Hey Bot!
+    - Hallo Freund
+    - guten Morgen
+    - Hallo ich
+    - Hallo süßer Junge
+    - Ja
+    - Sie da
+    - Hiihihi
+    - Hallo Schatz
+    - verdammt
+    - Heyo
+    - ayyyy whaddup
+    - Heya
+    - Hallöle
+    - Hellllooooooo
+    - wie geht's
+    - Hei
+    - Na hallo da
+    - Ich sagte, helllllloooooO !!!!
+    - Was ist los, mein Bot?
+    - hiii
+    - Heyho
+    - Hey, lass uns reden
+    - Jojojo
+    - Hey Mann
+    - Hallo, ich bin es wieder
+    - was geht
+    - guten Tag
+    - jop
+    - Hallo, ich bin es
+    - guten Abend
+    - guten Nachmittag
+    - hallo du
+    - hey
+    - Hallo Sara
+    - Guten Tag
+    - hallo sarah
+
+- intent: goodbye
+  examples: |
+    - Auf Wiedersehen
+    - Gute Nacht
+    - wiedershen
+    - Gut Nacht
+    - Tschüss
+    - toodle    -oo
+    - muss gehen
+    - Abschied
+    - bis später
+    - Tschüss für heute
+    - Tschüss war nett mit dir zu reden
+    - Tschüss Udo
+    - Tschüss Bot
+    - k byyye #slay
+    - Bis später
+    - Ciao
+    - dann tschüss
+    - Tschüssikowski
+    - Tschüss!
+
+- intent: bot_challenge
+  examples: |
+    - Bist du ein Bot?
+    - Bist du ein echter Bot?
+    - Bist du ein computer
+    - Bist du wirklich ein Bot?
+    - Bist du ein Roboter
+    - Bist du ein Rasa    -Bot?
+    - Was bist du, ein Bot?
+    - Sag mir, bist du ein Bot?
+    - Bist du ein Skynet?
+    - Bist du ein Chatbot?
+    - Bist du ai
+    - Bist du künstliche Intelligenz?
+    - Bist du künstlich?
+    - Ich denke du bist ein Chatbot
+    - Du bist ein Roboter
+    - Du bist ai
+    - Du bist ein Chatbot
+    - bist du ein Bot
+    - Bist du ein Bot ?
+    - Du bist ein Bot
+    - Bist du der Bot?
+    - Hallo, bist du der Bot?
+    - Bist du ein Chat    -Bot?
+    - Bist du ein Roboter?
+    - Bist du echt?
+    - Was bist du ?
+    - Bist du echt lol
+    - Weil du ein Bot bist
+    - bist du ein Bot?
+    - Oh, bist du ein Chatbot?
+    - Bist du sicher, dass du ein Bot bist?
+    - Bist du ein Bot
+
+- intent: affirm
+  examples: |
+    - Akzeptieren
+    - Genial!
+    - Cool
+    - Gut
+    - Groß
+    - Ich nehme an
+    - Ich nehme an.
+    - Genau
+    - Ich benutze es
+    - Ich habe meine Meinung geändert. Ich möchte es akzeptieren
+    - Ich mache
+    - Ich verstehe es
+    - Ich denke schon
+    - Ich habe es in der Vergangenheit benutzt
+    - Ich werde
+    - Ich würde das absolut lieben
+    - Ich bin mir sicher ich werde!
+    - Nett
+    - IN ORDNUNG
+    - Na sicher
+    - Oh ja
+    - Oh ok
+    - In Ordnung, lass uns anfangen
+    - In Ordnung.
+    - In Ordnung
+    - In Ordnung!
+    - BITTE
+    - SICHER
+    - Sicher
+    - Süss
+    - Das wäre toll
+    - JA
+    - JEP
+    - Ja
+    - Ja sicher
+    - Ja, das ist in Ordnung
+    - Ja!
+    - Ja, ich will
+    - Ja bitte
+    - Ja bitte!
+    - Ja, ich akzeptiere
+    - Ja.
+    - Jep
+    - ein bisschen
+    - absolut
+    - akzeptieren
+    - akzeptiert
+    - einverstanden
+    - Ah ok
+    - in Ordung
+    - alles klar, cool
+    - amayzing
+    - tolle!
+    - genial
+    - genial!
+    - bestätigen
+    - cool
+    - cool :)
+    - Coole Geschichte, Bro
+    - cool!
+    - coolio
+    - Auf jeden Fall ja ohne Zweifel
+    - erledigt
+    - Meinetwegen
+    - natürlich
+    - gut
+    - Scheiße ja!
+    - gehen
+    - gehen Sie geradeaus
+    - Tue es
+    - geht super gut
+    - gut.
+    - großartig
+    - Großartig, machen wir das
+    - großartig!
+    - Hölle, ja
+    - Auf jedenfall
+    - Hm, das würde mir gefallen
+    - wie schön!
+    - ich bin!
+    - ich will das
+    - ich werde!
+    - es ist okay
+    - es ist in Ordnung
+    - ja cool
+    - Ja, das ist großartig
+    - Jezz
+    - Jo
+    - k
+    - kk
+    - Machen wir das
+    - Lass uns das machen
+    - nett
+    - nicht schlecht
+    - Natürlich tue ich
+    - Oh toll!
+    - Oh cool
+    - Oh gut !!
+    - oh super
+    - in Ordnung
+    - OK Cool
+    - Okay, gut
+    - ok Freund
+    - OK gut
+    - Ok, großartig
+    - Okay, ich akzeptiere
+    - Okay, Sara
+    - Ok, ich benehme mich jetzt
+    - OK ich habe verstanden
+    - in Ordnung...
+    - alles klar
+    - Okie
+    - Ok
+    - Oui
+    - perfekt
+    - Bitte
+    - si
+    - irgendwie
+    - sicher
+    - sichere Sache
+    - sicher!
+    - Das ist cool
+    - das ist ok
+    - das klingt gut
+    - das ist großartig
+    - das ist gut
+    - oben
+    - Ähm
+    - sehr viel
+    - Nun ja
+    - y
+    - Du bist cool
+    - Du machst es
+    - Ja, das ist cool
+    - Jaah
+    - Yay
+    - Ihr
+    - ja bitte
+    - Ja, mach das
+    - ja sicher
+    - yeah '=
+    - ja, warum nicht
+    - yeeeeezzzzz
+    - Jaaa
+    - Ja, das will ich
+    - Ja, wenn ich muss
+    - Ja, das ist schön
+    - Ja, ich werde es Ihnen danken
+    - ja, ich will
+    - ja bitte annehmen
+    - ja Baby
+    - Ja, gib mir Informationen
+    - ja, fahre fort
+    - Ja, mach schon
+    - ja, großartig
+    - ja, ich akzeptiere
+    - Ja, ich stimme zu
+    - ja ich habe schon mal einen bot gebaut
+    - Ja, habe ich!
+    - ja ist es
+    - ja es war okay
+    - ja natürlich
+    - ja bitte!
+    - Ja, bitte
+    - Ja, Sir
+    - Ja, das ist toll
+    - Ja, das ist was ich will
+    - Ja, du kannst
+    - Ja'
+    - Ja, würde ich gerne
+    - Ja, bitte geben Sie mir Informationen
+    - ja bin ich
+    - Jaaaa
+    - Ja, ja
+    - ja Ja Ja
+    - Hoppla
+    - Sie haben mir eine Ja    - oder Nein    -Frage gestellt, die ich mit Ja beantwortet habe
+    - Du hast mich, ich akzeptiere, wenn du willst, dass ich es tue
+    - Jahre
+    - yyeeeh
+    - Jawoll
+    - ok
+    - Ja natürlich
+    - ich nehme an
+    - yes
+    - ja
+    - toll
+
+
+- intent: preise_question
+  examples: |
+    - Hat axxessio eine Auszeichnung gewonnen?
+    - Hat axxessio eine Preise gewonnen?
+    - Welche Preise hat axxessio gewonnen?
+    - Welche Auszeichnungen hat axxessio gewonnen?
+    - Wie viele auszeichnungen hat Axxessio?
+    - Wie viele Auszeichnungen wurden von Axxessio gewonnen?
+
+- intent: size_question
+  examples: |
+    - wie viele personen arbeiten in Axxessio?
+    - wie groß ist die firma?
+    - wie groß is Axxessio?
+    - Wie viele Mitarbeiter haben Sie?
+    - wie viele mitarbeiter hat Axxessio?
+    - wie groß denkst du ist Axxessio?
+    - welcher unternehmensgröße ordnen sie Axxessio zu?
+
+- intent: location_question
+  examples: |
+    - Welche Niederlassungen hat axxessio?
+    - Wie viele Niederlassungen hat axxessio?
+    - wo ist das axxessio büro?
+    - wo basiert axxessio?
+    - wo ist das büro?
+    - kennen Sie die Adresse von axxessio?
+    - kennst du die Adresse?
+    - wo ist das büro in deutschland?
+    - kannst du mir die Adresse geben
+
+
+- intent: client_question
+  examples: |
+   - Wie viele Clients hat Axxessio?
+   - Welche Kunden hat axxessio?
+   - Welche Art von Clients Axxessio hat
