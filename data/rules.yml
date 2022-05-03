@@ -6,6 +6,19 @@ rules:
   steps:
   - intent: goodbye
   - action: utter_goodbye
+  wait_for_user_input: false
+
+- rule: Say get started when user randomly says yes at the begining
+  conversation_start: true
+  steps:
+    - intent: affirm
+    - action: utter_get_started
+
+- rule: Say goodbye when user randomly says no at the begining
+  conversation_start: true
+  steps:
+    - intent: deny
+    - action: utter_goodbye
 
 - rule: Say 'I am a bot' anytime the user challenges
   steps:

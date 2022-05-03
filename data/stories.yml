@@ -19,20 +19,57 @@ stories:
     - action: utter_preise_count
     - action: utter_preise_type
 
-- story: address_info
+- story: niederlassung_info
   steps:
-    - intent: location_question 
-    - action: utter_location
+    - intent: niederlassung_question 
+    - action: utter_niederlassung_details
+    - action: utter_location_question
+
+
+- story: get_address_affirm
+  steps:
     - action: utter_location_question
     - intent: affirm
     - action: utter_location_Bonn
     - action: utter_location_Darmstadt
+    - action: utter_thankyou_anything_else
+
+- story: get_address_deny
+  steps:
+    - action: utter_location_question
+    - intent: deny
+    - action: utter_thankyou_anything_else
+
+- story: ask_address
+  steps:
+    - intent: address_question
+    - action: action_show_location_address
+
+- story: continue_info
+  steps:
+    - action: utter_thankyou_anything_else
+    - intent: affirm
+    - action: utter_get_started
+
+- story: no_more_info
+  steps:
+    - action: utter_thankyou_anything_else
+    - intent: deny
+    - action: utter_goodbye
 
 - story: client_detail
   steps:
     - intent: client_question
-    - action: utter_client_count
-    - action: utter_client_type
+    - action: action_show_client_category
+    - action: utter_provide_category
+    - intent: company_types
+    - action: action_show_customer
+
+- story: exit_client_detail
+  steps:
+    - action: utter_provide_category
+    - intent: deny
+    - action: utter_thankyou_anything_else
     
 
 

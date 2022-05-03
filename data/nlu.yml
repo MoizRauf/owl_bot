@@ -312,41 +312,128 @@ nlu:
     - ja
     - toll
 
+- intent: deny
+  examples: |
+    - Nein
+    - definitiv nicht
+    - noch nie
+    - absolut nicht
+    - Ich glaube nicht
+    - Ich fürchte nein
+    - nein Sir
+    - Nein, madam
+    - auf keinen Fall
+    - Nein Entschuldigung
+    - Nein nicht wirklich.
+    - Nein, nicht für mich
+    - nee
+    - nein und wieder nein
+    - No Go
+    - Nein Danke
+    - Ablehnen
+    - verweigern
+    - ich lehne ab
+    - keine Ursache
+    - nein, ich habe mich noch nicht entschieden, ob ich mich anmelden möchte
+    - Ich will es dir nicht geben
+    - Ich werde es dir nicht geben
+    - Nein, ich akzeptiere nicht
+    - Nein!!!!
+    - Nein, du hast es falsch gemacht
+    - Nein, ich kann nicht
+    - ich bin mir nicht sicher
+    - NEIN
+    - nein
+    - nicht wirklich
+    - Ich denke, es bedeutet     - nein
+    - Ich will nicht
+    - Beides will ich nicht
+    - nein danke
+    - keines von denen
+    - Nein danke
+    - Nichts bestimmtes.
 
 - intent: preise_question
   examples: |
-    - Hat axxessio eine Auszeichnung gewonnen?
-    - Hat axxessio eine Preise gewonnen?
-    - Welche Preise hat axxessio gewonnen?
-    - Welche Auszeichnungen hat axxessio gewonnen?
-    - Wie viele auszeichnungen hat Axxessio?
-    - Wie viele Auszeichnungen wurden von Axxessio gewonnen?
+    - Hat [Axxessio](company) eine Auszeichnung gewonnen?
+    - Hat [Axxessio](company) eine Preise gewonnen?
+    - Welche Preise hat [Axxessio](company) gewonnen?
+    - Welche Auszeichnungen hat [Axxessio](company) gewonnen?
+    - Wie viele auszeichnungen hat [Axxessio](company)?
+    - Wie viele Auszeichnungen wurden von [Axxessio](company) gewonnen?
 
 - intent: size_question
   examples: |
-    - wie viele personen arbeiten in Axxessio?
+    - wie viele personen arbeiten in [Axxessio](company)?
     - wie groß ist die firma?
-    - wie groß is Axxessio?
+    - wie groß is [Axxessio](company)?
     - Wie viele Mitarbeiter haben Sie?
-    - wie viele mitarbeiter hat Axxessio?
-    - wie groß denkst du ist Axxessio?
-    - welcher unternehmensgröße ordnen sie Axxessio zu?
+    - wie viele mitarbeiter hat [Axxessio](company)?
+    - wie groß denkst du ist [Axxessio](company)?
+    - welcher unternehmensgröße ordnen sie [Axxessio](company) zu?
 
-- intent: location_question
+- intent: niederlassung_question
   examples: |
-    - Welche Niederlassungen hat axxessio?
-    - Wie viele Niederlassungen hat axxessio?
-    - wo ist das axxessio büro?
-    - wo basiert axxessio?
+    - Welche Niederlassungen hat [Axxessio](company)?
+    - Wie viele Niederlassungen hat [Axxessio](company)?
+    - wo ist das [Axxessio](company) büro?
+    - wo basiert [Axxessio](company)?    
+    - wo ist das büro in Deutschland?
     - wo ist das büro?
-    - kennen Sie die Adresse von axxessio?
-    - kennst du die Adresse?
-    - wo ist das büro in deutschland?
+   
+
+- intent: address_question
+  examples: |
+    - kannst du mir die Adresse für Haupsitz geben?
+    - kannst du mir die Adresse für Niederlassungen geben?
     - kannst du mir die Adresse geben
+    - kennen Sie die Adresse von [Axxessio](company)?
+    - kennst du die Adresse von [Axxessio](company)?
+    - Wo ist [Axxessio](company) in [Bonn](location) 
+    - Wo ist [Axxessio](company) in [Darmstadt](location)
+    - Was ist die Adresse in [Bonn](location)
+    - Was ist die Adresse in [Darmstadt](location)
+    - Kennst du die Adresse in [Bonn](location)
+    - Kennst du die Adresse in [Darmstadt](location)
+    - [Bonn](location)
+    - [Darmstadt](location)
 
 
 - intent: client_question
   examples: |
-   - Wie viele Clients hat Axxessio?
-   - Welche Kunden hat axxessio?
-   - Welche Art von Clients Axxessio hat
+   - Wie viele Clients hat [Axxessio](company)?
+   - Welche Kunden hat [Axxessio](company)?
+   - Welche Art von Clients [Axxessio](company) hat
+
+- intent: company_types
+  examples: |
+    - hospitality
+    - event
+    - banking
+    - shipping
+    - medical
+    - research
+    - machinery
+    - appliances
+    - public
+    - services
+    - telco
+    - electronics
+
+- synonym: Bonn
+  examples: |
+    - bonn
+    - Haupsitz
+    - haupsitz
+    - haupt
+    - main
+    - head office
+
+- synonym: Darmstadt
+  examples: |
+    - darmstadt
+    - Niederlassungen
+    - niederlassungen
+    - branch    
+
+

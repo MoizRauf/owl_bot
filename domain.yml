@@ -4,14 +4,42 @@ intents:
   - greet
   - goodbye
   - affirm
+  - deny
   - client_question
+  - company_types
   - size_question
   - preise_question
-  - location_question
+  - niederlassung_question
+  - address_question
   - bot_challenge
-#slots:
+
+slots:
 #  client_category:
+#    type: categorical
+#    values:
+#      - telco
+#      - t1
+#      - t2 # figure out these later
+  client_category:
+    type: text   
+    mappings:
+    - type: from_entity
+      entity: client_cat
+
+  location_category:
+    type: text   
+    mappings:
+    - type: from_entity
+      entity: location
+
+#  employee_name:
 #    type: text
+
+entities:
+  - location
+  - company
+  - client_cat
+
 responses:
   utter_greet:
   - text: "Hallo, ich heiße Owl. der Axxessio-Bot!"
@@ -19,12 +47,15 @@ responses:
   - text: "Hallo! Ich heiße Owl. der Axxessio-Bot!"
 
   utter_get_started:
-  - text: "Sie können mir Fragen zu Axxessio stellen. Möchten wir anfangen?"
-  - text: "Ich kann Sie über verschiedene Informationen zu Axxessio informieren. Möchten wir anfangen?"
-  - text: "Ich soll grundlegende Informationen über Axxessio beantworten. Möchten wir anfangen?"
+  - text: "Sie können mir Fragen zu Axxessio stellen. Was möchten Sie fragen?"
+  - text: "Ich kann Sie über verschiedene Informationen zu Axxessio informieren. Was möchten Sie fragen?"
+  - text: "Ich soll grundlegende Informationen über Axxessio beantworten. Was möchten Sie fragen?"
  
   utter_goodbye:
   - text: "Auf Wiedersehen"
+
+  utter_thankyou_anything_else:
+  - text: "Möchten Sie noch etwas wissen?" 
 
   utter_size_info:
   - text: "Axxessio ist ein mittelstandisches firma"
@@ -36,30 +67,32 @@ responses:
   utter_preise_type:
   - text: "z.b. in 2021 Großen Preis des Mittelstandes ausgezeichnet"
 
-  utter_client_count:
-  - text: "Axxessio hat mit viele Kunden in verschiedenen Kategorie gearbeitet"
-
-  utter_location:
+  utter_niederlassung_details:
   - text: "Axxessio hat zwei Niederlassungen in Deutschland Haupsitz in Bonn und Niederlassung im Darmstadt."
-
+  
   utter_location_question:
-  - text: "Brauchen sie die Addresse?"
+  - text: "Brauchen Sie die Addresse?"
+  - text: "Möchten Sie die Adresse wissen?"
   
   utter_location_Bonn:
-  - text: "Kurfürstenallee 5 • 53177 Bonn"
+  - text: "Die Addresse für Haupsitz ist: Kurfürstenallee 5 • 53177 Bonn"
   
   utter_location_Darmstadt:
-  - text: "Hilpertstraße 20 • 64295 Darmstadt"
-
-
-  utter_client_type:
-  - text: "z.b. Watt, HRS Hotelportal, Telekom, DHL etc"
+  - text: "Die Addresse für Niederlassung ist: Hilpertstraße 20 • 64295 Darmstadt"
+  
+  utter_provide_category:
+  - text: "Bitte geben Sie die Kategorie für weitere Informationen an"
 
   utter_iamabot:
   - text: "Jep, ich bin ein Bot!"
   - text: "Ja, ich bin ein Bot."
   - text: "Ja, du hast es erraten, ich bin ein Bot!"
   - text: "Ich bin in der Tat ein Bot 🤖"
+
+actions:
+  - action_show_location_address
+  - action_show_client_category
+  - action_show_customer
 
 session_config:
   session_expiration_time: 60
