@@ -5,13 +5,19 @@ intents:
   - goodbye
   - affirm
   - deny
+  - out_of_scope
+  - cant_help
+  - search_by_name
   - client_question
+  - culture_question
   - company_types
   - size_question
   - preise_question
   - niederlassung_question
   - address_question
   - bot_challenge
+  - job_question
+
 
 slots:
 #  client_category:
@@ -32,13 +38,38 @@ slots:
     - type: from_entity
       entity: location
 
-#  employee_name:
-#    type: text
+  person_name:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: person
+
+  job_title:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: job_title
+
+  job_department:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: job_dep
+
+  job_level:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: job_level
 
 entities:
   - location
   - company
   - client_cat
+  - person
+  - job_level
+  - job_dep
+  - job_title
 
 responses:
   utter_greet:
@@ -50,7 +81,12 @@ responses:
   - text: "Sie können mir Fragen zu Axxessio stellen. Was möchten Sie fragen?"
   - text: "Ich kann Sie über verschiedene Informationen zu Axxessio informieren. Was möchten Sie fragen?"
   - text: "Ich soll grundlegende Informationen über Axxessio beantworten. Was möchten Sie fragen?"
- 
+
+  utter_canthelp:
+  - text: "Es tut mir leid, dass ich dir nicht helfen konnte. Wenn Sie allgemeine Fragen zu Axxessio haben,
+     kontaktiere uns unter [link](https://www.axxessio.com/de/kontakt) für alles andere."
+
+  
   utter_goodbye:
   - text: "Auf Wiedersehen"
 
@@ -61,12 +97,39 @@ responses:
   - text: "Axxessio ist ein mittelstandisches firma"
   - text: "Axxessio hat von 51 bis 200 mitarbeiter"
   
-  utter_preise_count:
-  - text: "Axxessio hat viele verschiedene Preise gewonnen"
-  
-  utter_preise_type:
-  - text: "z.b. in 2021 Großen Preis des Mittelstandes ausgezeichnet"
+  utter_incorrect_location:
+  - text: "Leider habe ich keine Informationen für deises Standort"
+  utter_incorrect_customer_category:
+  - text: "Leider diese Kategorie ist nicht korrect."
+  utter_no_job_found:
+  - text: "Leider habe ich keine offenen Stellen gefunden. Besuchen Sie weiter [Axxessio Karriere](https://www.axxessio.com/de/karriere)"
 
+  utter_flat_heirarchy:
+  - text: "Axxessio hat Flache Hierrachien"
+  
+  utter_dev_focus:
+  - text: "Unser Herz schlägt für das Projektgeschäft – Wir lieben Herausforderungen und neue Technologien! "
+  
+  utter_personal_dev:
+  - text: "Wir legen Wert auf persönliche Weiterentwicklung und sind immer Up-to-date. "
+  
+  utter_toleranz:
+  - text: "Toleranz und Respekt füreinander sind sehr wichtig"
+
+  utter_provide_correct_name:
+  - text: "Bitte geben Sie den korrekten Namen an"
+  
+  utter_preise_won:
+  - text: " Axxessio hat viele verschiedenen Preise gewonnen."
+  utter_preise_ludwig:
+  - text: "Gewinner des [Ludwig 2020/2021](https://axxessio.com/de/news-de/axxessio-gewinnt-den-ludwig-2020-2021-in-der-kategorie-humanist) in der Kategorie Humanist"
+  utter_preise_große_mittelstandes:
+  - text: "Finalist beim [Großen Preis des Mittelstandes](https://axxessio.com/de/news-de/axxessio-als-finalist-beim-grossen-preis-des-mittelstandes-ausgezeichnet) in 2021"
+  utter_preise_top_arbeit_geber:
+  - text: "Erste Platz als [TOP Arbeitgeber für IT-Jobs 2021](https://axxessio.com/de/news-de/axxessio-belegt-den-1-platz-der-top-arbeitgeber-fuer-it-jobs-2021-im-bereich-beratung-und-consulting) in der Branche Beratung und Consulting" 
+  utter_preise_csr:
+  - text: "Im 2020 Axxessio erhält die Silbermedaille in Corporate Social Responsibility (CSR)"
+  
   utter_niederlassung_details:
   - text: "Axxessio hat zwei Niederlassungen in Deutschland Haupsitz in Bonn und Niederlassung im Darmstadt."
   
@@ -93,6 +156,8 @@ actions:
   - action_show_location_address
   - action_show_client_category
   - action_show_customer
+  - action_show_employee
+  - action_show_jobs
 
 session_config:
   session_expiration_time: 60

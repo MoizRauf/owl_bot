@@ -8,6 +8,16 @@ stories:
   - action: utter_greet
   - action: utter_get_started
 
+- story: greet_canthelp
+  steps:
+  - intent: cant_help
+  - action: utter_canthelp
+
+- story: out of scope
+  steps:
+  - intent: out_of_scope
+  - action: utter_canthelp
+
 - story: size_info
   steps:
     - intent: size_question
@@ -16,8 +26,20 @@ stories:
 - story: preise_info
   steps:
     - intent: preise_question 
-    - action: utter_preise_count
-    - action: utter_preise_type
+    - action: utter_preise_won
+    - action: utter_preise_ludwig
+    - action: utter_preise_große_mittelstandes
+    - action: utter_preise_top_arbeit_geber
+    - action: utter_preise_csr
+
+- story: ethos_of_axxessio
+  steps:
+    - intent: culture_question
+    - action: utter_flat_heirarchy
+    - action: utter_dev_focus
+    - action: utter_personal_dev
+    - action: utter_toleranz
+    - action: utter_get_started
 
 - story: niederlassung_info
   steps:
@@ -33,6 +55,11 @@ stories:
     - action: utter_location_Bonn
     - action: utter_location_Darmstadt
     - action: utter_thankyou_anything_else
+
+- story: incorrect_location
+  steps:
+    - action: utter_incorrect_location
+    - action: utter_location_question 
 
 - story: get_address_deny
   steps:
@@ -65,11 +92,46 @@ stories:
     - intent: company_types
     - action: action_show_customer
 
-- story: exit_client_detail
+- story: incorrect_client_category
   steps:
+    - action: utter_incorrect_customer_category
+    - action: action_show_client_category
     - action: utter_provide_category
-    - intent: deny
-    - action: utter_thankyou_anything_else
+
+- story: employee_question
+  steps:
+    - intent: search_by_name
+    - action: action_show_employee
+
+- story: incorrect_employee_name
+  steps:
+    - action: utter_provide_correct_name
+    - action: utter_get_started
+
+- story: find_job_by_title
+  steps: 
+    - intent: job_question
+    - action: action_show_jobs
+
+#- story: find_job_by_department
+#  steps: 
+#    - intent: job_by_department
+#    - action: action_show_jobs
+
+#- story: find_job_by_level
+#  steps: 
+#    - intent: job_by_level
+#    - action: action_show_jobs
+
+- story: no_job_found
+  steps:
+    - action: utter_no_job_found
+    - action: utter_get_started
+#- story: exit_client_detail
+#  steps:
+#    - action: utter_provide_category
+#    - intent: deny
+#    - action: utter_thankyou_anything_else
     
 
 

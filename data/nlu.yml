@@ -7,6 +7,8 @@ nlu:
     - Hallo du
     - Hallo Bot
     - Hey Bot
+    - Hallo Owl
+    - Hey Owl
     - Hallo Junge
     - Guten Morgen
     - Hallo nochmal
@@ -47,6 +49,7 @@ nlu:
     - Na hallo da
     - Ich sagte, helllllloooooO !!!!
     - Was ist los, mein Bot?
+    - Was ist los, mein owl?
     - hiii
     - Heyho
     - Hey, lass uns reden
@@ -61,7 +64,7 @@ nlu:
     - guten Nachmittag
     - hallo du
     - hey
-    - Hallo Sara
+    - Hallo owl
     - Guten Tag
     - hallo sarah
 
@@ -80,6 +83,7 @@ nlu:
     - Tschüss war nett mit dir zu reden
     - Tschüss Udo
     - Tschüss Bot
+    - Tschüss owl
     - k byyye #slay
     - Bis später
     - Ciao
@@ -89,6 +93,7 @@ nlu:
 
 - intent: bot_challenge
   examples: |
+    - Owl was bist du?
     - Bist du ein Bot?
     - Bist du ein echter Bot?
     - Bist du ein computer
@@ -353,6 +358,279 @@ nlu:
     - Nein danke
     - Nichts bestimmtes.
 
+- intent: cant_help
+  examples: |
+    - Ok, dann kannst du mir nicht helfen
+    - Das war Scheiße, du hilfst nicht
+    - Du kannst mir nicht helfen
+    - Du kannst mir nicht mit dem helfen, was ich brauche
+    - Dann kannst du mir wohl nicht helfen
+    - Okay, ich glaube, du kannst mir nicht helfen
+    - das ist nicht was ich will
+    - ok, aber das hilft mir nicht
+    - Das führt zu nichts
+    - Dieses Gespräch ist nicht wirklich hilfreich
+    - Du kannst mir nicht mit dem helfen, was ich will
+    - Ich glaube nicht, dass du tun kannst, was ich will
+    - halt
+    - Hör auf zurückzugehen
+    - Hast du was?
+    - und du nennst dich bot Firma? pff
+    - und das ist es?
+    - nichts anderes?
+
+- intent: out_of_scope
+  examples: |
+    - Bitte helfe mir mit meinem Eis, es tropft
+    - keine wartezeit zurück ich möchte ein tropfendes eis, aber einen kegel, der es auffängt, damit du das eis später trinken kannst
+    - Ich möchte ein nicht tropfendes Eis
+    - Hey kleine Mama, lass es dir ins Ohr flüstern
+    - Jemand ruft die Polizei, ich glaube der Bot ist gestorben
+    - Zeige mir ein Bild von einem Huhn
+    - weder
+    - Ich möchte französische Küche
+    - Ich bin hungrig
+    - Restaurant
+    - Du bist ein Lmao    -Verlierer
+    - Kann mir ein glutenfreies Restaurant gezeigt werden?
+    - Es ist mir egal !!!!
+    - Es ist mir egal, wie es dir geht
+    - nochmal?
+    - Oh, warte, ich gab dir meine Arbeits    -E    -Mail    -Adresse. Kann ich sie ändern?
+    - Warte, lass es mich finden
+    - Hör auf, es ist mir egal !!!
+    - Ja wirklich? du bist so empfindlich
+    - Woher?
+    - Ich habe meine Meinung geändert
+    - was?
+    - Habe ich dich gebrochen?
+    - Ich möchte nicht den meiner Namen nennen
+    - Dieser Link funktioniert nicht!
+    - Das hast du schon
+    - Das ist eine wirklich frustrierende Erfahrung
+    - kein Halt
+    - Scheiß Bot
+    - willst du mich heiraten?
+    - gib mir Essen
+    - Ich will Essen
+    - Udo, ich will dich heiraten
+    - Ich will feiern
+    - Shitmuncher
+    - Ich mag dich
+    - Ich will Pizza
+    - Ich will Pizza!!
+    - alberner Bot
+    - ich will essen
+    - Du bist ein dummer Bot
+    - ich hasse dich
+    - Kann ich dir zuerst Fragen stellen?
+    - Ist es ein Ödland voller zerbrochener Roboterteile?
+    - Ich kann Ihre Anfrage nicht bearbeiten
+    - Bist du Veganer?
+    - wer wird meine email anser?
+    - Verkaufen Sie Vakuumroboter?
+    - Ich möchte einen Roomba für meinen Enkel kaufen
+    - und Hühnergeräusche ins Telefon machen
+    - Ist Barbara noch mit dir verheiratet?
+    - Was macht deine Frau an diesem Wochenende?
+    - wie sind die Kinder
+    - Du bist ziemlich langweilig
+    - persönlich oder beruflich?
+    - Verwenden Sie Rasa Core und NLU?
+    - Erzähl mir einen Witz
+    - was sonst?
+    - Ich habe es dir schon gesagt! Ich bin ein Scheißkerl
+    - Ich bin ein Scheißkerl
+    - wer sind die ingenieure bei rasa?
+    - Wer sind Sie?
+    - Können wir weiter plaudern?
+    - sprich mit mir
+    - Wer ist dein Lieblingsroboter?
+    - Eine gezähmte Maus wird in den nächsten Tagen vor Ihrer Haustür eintreffen
+    - Sie werden es an der einzelnen roten Rose erkennen, die es zwischen den Zähnen trägt
+    - Ich werde eine Maus für Sie zähmen
+    - Ist der Newsletter nicht nur Spam?
+    - geh zurück
+    - Kannst du mir mit den Dokumenten helfen?
+    - Entschuldigung, ich kann nicht umformulieren
+    - und Ihre REST    -API funktioniert nicht
+    - ich sagte dir bereits
+    - besser als du
+    - Oh mein Gott, nicht schon wieder!
+    - Du bist ein Badass Bot!
+    - lol
+    - warum brauchst du das
+    - Geht Sie das etwas an?
+    - Können Sie mir bei Ihren Unterlagen helfen?
+    - Ich brauche sofort Hilfe bei der Implementierung des coolsten Bot, den Sie sich vorstellen können
+    - Kannst du mir sagen, wie man einen Bot baut?
+    - Kannst du aus unserem Gespräch lernen?
+    - üblich, versuche es einfach
+    - Hey, ich habe dich vor ein paar Tagen kontaktiert, aber keine Antwort bekommen, irgendwelche Neuigkeiten?
+    - Bitte beeile dich, ich habe eine Frist von zwei Wochen, um den Bot zu liefern, der für eine sehr große Firma bestimmt ist
+    - Sie sind lästig
+    - Muss ich akzeptieren?
+    - Ist Rasa wirklich schlau?
+    - kannst du auch deutsch?
+    - ist der Newsletter das Abonnement wert?
+    - es ist ein Jammer
+    - Ich will mehr von dir in meinem Leben!
+    - Derjenige, der besser ist als du
+    - du gehtst mir auf die Nerven
+    - Bots sind schlecht
+    - Ich mag keine Bots
+    - wo lebst du?
+    - Wie geht es Akelas Katzen?
+    - aber ich habe dir gerade gesagt, dass :(
+    - Warum antwortest du nicht?
+    - Aber du bist eine englische Seite :(
+    - Kannst du mir helfen, einen Bot zu bauen?
+
+- intent: search_by_name
+  examples: |
+    - Welche Position hat [Sascha Peters](person)?
+    - Am welche Position hat [Sascha Peters](person) arbeitet?
+    - In welche department arbeitet [Sascha Peters](person)?
+    - als was arbeitet [Sascha Peters](person)?
+    - Können Sie mir etwas über [Sascha Peters](person) sagen
+    - Kennst du [Sascha Peters](person)?
+    - In welche department arbeitet [sacha peters](person)?
+    - Erzähl mir von [sacha peters](person)?
+    - erzähl mir davon [sacha peters](person)?
+    - In welcher Abteilung arbeitet [sacha peters](person)?
+    
+    - Welche Position hat [Prof. Dr. Goodarz Mahbobi](person)?
+    - Am welche Position hat [Prof. Dr. Goodarz Mahbobi](person) arbeitet?
+    - In welche department arbeitet [Prof. Dr. Goodarz Mahbobi](person)?
+    - als was arbeitet [Prof. Dr. Goodarz Mahbobi](person)?
+    - Können Sie mir etwas über [Prof. Dr. Goodarz Mahbobi](person) sagen
+    - Kennst du [Prof. Dr. Goodarz Mahbobi](person)?
+    - In welche department arbeitet [Prof. Dr. Goodarz Mahbobi](person)?
+    - Erzähl mir von [Prof. Dr. Goodarz Mahbobi](person)?
+    - erzähl mir davon [Prof. Dr. Goodarz Mahbobi](person)?
+    - In welcher Abteilung arbeitet [Prof. Dr. Goodarz Mahbobi](person)?
+
+    - Welche Position hat [Keyvan Mahboobi](person)?
+    - Am welche Position hat [Keyvan Mahboobi](person) arbeitet?
+    - In welche department arbeitet [Keyvan Mahboobi](person)?
+    - als was arbeitet [Keyvan Mahboobi](person)?
+    - Können Sie mir etwas über [Keyvan Mahboobi](person) sagen
+    - Kennst du [Keyvan Mahboobi](person)?
+    - In welche department arbeitet [Keyvan Mahboobi](person)?
+    - Erzähl mir von [Keyvan Mahboobi](person)?
+    - erzähl mir davon [Keyvan Mahboobi](person)?
+    - In welcher Abteilung arbeitet [Keyvan Mahboobi](person)?
+
+    - Welche Position hat [Jin-Young Lee](person)?
+    - Am welche Position hat [Jin-Young Lee](person) arbeitet?
+    - In welche department arbeitet [Jin-Young Lee](person)?
+    - als was arbeitet [Jin-Young Lee](person)?
+    - Können Sie mir etwas über [Jin-Young Lee](person) sagen
+    - Kennst du [Jin-Young Lee](person)?
+    - In welche department arbeitet [Jin-Young Lee](person)?
+    - Erzähl mir von [Jin-Young Lee](person)?
+    - erzähl mir davon [Jin-Young Lee](person)?
+    - In welcher Abteilung arbeitet [Jin-Young Lee](person)?
+
+    - Welche Position hat [Oliver Wronka](person)?
+    - Am welche Position hat [Oliver Wronka](person) arbeitet?
+    - In welche department arbeitet [Oliver Wronka](person)?
+    - als was arbeitet [Oliver Wronka](person)?
+    - Können Sie mir etwas über [Oliver Wronka](person) sagen 
+    - Kennst du [Oliver Wronka](person)?
+    - In welche department arbeitet [Oliver Wronka](person)?
+    - Erzähl mir von [Oliver Wronka](person)?
+    - erzähl mir davon [Oliver Wronka](person)?
+    - In welcher Abteilung arbeitet [Oliver Wronka](person)?
+
+    - Welche Position hat [Marius Caspar](person)? 
+    - Am welche Position hat [Marius Caspar](person) arbeitet?
+    - In welche department arbeitet [Marius Caspar](person)?
+    - als was arbeitet [Marius Caspar](person)?
+    - Können Sie mir etwas über [Marius Caspar](person) sagen
+    - Kennst du [Marius Caspar](person)?
+    - In welche department arbeitet [Marius Caspar](person)?
+    - Erzähl mir von [Marius Caspar](person)?
+    - erzähl mir davon [Marius Caspar](person)?
+    - In welcher Abteilung arbeitet  [Marius Caspar](person)?
+
+    - Welche Position hat [Dr. Dirk Meyerhoff](person)? 
+    - Am welche Position hat [Dr. Dirk Meyerhoff](person) arbeitet?
+    - In welche department arbeitet [Dr. Dirk Meyerhoff](person)?
+    - als was arbeitet [Dr. Dirk Meyerhoff](person)?
+    - Können Sie mir etwas über [Dr. Dirk Meyerhoff](person) sagen
+    - Kennst du [Dr. Dirk Meyerhoff](person)?
+    - In welche department arbeitet [Dr. Dirk Meyerhoff](person)?
+    - Erzähl mir von [Dr. Dirk Meyerhoff](person)?
+    - erzähl mir davon [Dr. Dirk Meyerhoff](person)?
+    - In welcher Abteilung arbeitet [Dr. Dirk Meyerhoff](person)?
+
+    - Welche Position hat [Thomas Temeschinko](person)? 
+    - Am welche Position hat [Thomas Temeschinko](person) arbeitet?
+    - In welche department arbeitet [Thomas Temeschinko](person)?
+    - als was arbeitet [Thomas Temeschinko](person)?
+    - Können Sie mir etwas über [Thomas Temeschinko](person) sagen
+    - Kennst du [Thomas Temeschinko](person)?
+    - In welche department arbeitet [Thomas Temeschinko](person)?
+    - Erzähl mir von [Thomas Temeschinko](person)?
+    - erzähl mir davon [Thomas Temeschinko](person)?
+    - In welcher Abteilung arbeitet [Thomas Temeschinko](person)?
+
+    - Welche Position hat [Andreas Bartsch](person)? 
+    - Am welche Position hat [Andreas Bartsch](person) arbeitet?
+    - In welche department arbeitet [Andreas Bartsch](person)?
+    - als was arbeitet [Andreas Bartsch](person)?
+    - Können Sie mir etwas über [Andreas Bartsch](person) sagen
+    - Kennst du [Andreas Bartsch](person)?
+    - In welche department arbeitet [Andreas Bartsch](person)?
+    - Erzähl mir von [Andreas Bartsch](person)?
+    - erzähl mir davon [Andreas Bartsch](person)?
+    - In welcher Abteilung arbeitet [Andreas Bartsch](person)?
+
+    - Welche Position hat [Florian Over](person)? 
+    - Am welche Position hat [Florian Over](person) arbeitet?
+    - In welche department arbeitet [Florian Over](person)?
+    - als was arbeitet [Florian Over](person)?
+    - Können Sie mir etwas über [Florian Over](person) sagen
+    - Kennst du [Florian Over](person)?
+    - In welche department arbeitet [Florian Over](person)?
+    - Erzähl mir von [Florian Over](person)?
+    - erzähl mir davon [Florian Over](person)?
+    - In welcher Abteilung arbeitet [Florian Over](person)?
+
+    - Welche Position hat [Omid Rezaei](person)? 
+    - Am welche Position hat [Omid Rezaei](person) arbeitet?
+    - In welche department arbeitet [Omid Rezaei](person)?
+    - als was arbeitet [Omid Rezaei](person)?
+    - Können Sie mir etwas über [Omid Rezaei](person) sagen
+    - Kennst du [Omid Rezaei](person)?
+    - In welche department arbeitet [Omid Rezaei](person)?
+    - Erzähl mir von [Omid Rezaei](person)?
+    - erzähl mir davon [Omid Rezaei](person)?
+    - In welcher Abteilung arbeitet [Omid Rezaei](person)?
+
+    - Welche Position hat [Majid Vesal](person)? 
+    - Am welche Position hat [Majid Vesal](person) arbeitet?
+    - In welche department arbeitet [Majid Vesal](person)?
+    - als was arbeitet [Majid Vesal](person)?
+    - Können Sie mir etwas über [Majid Vesal](person) sagen
+    - Kennst du [Majid Vesal](person)?
+    - In welche department arbeitet [Majid Vesal](person)?
+    - Erzähl mir von [Majid Vesal](person)?
+    - erzähl mir davon [Majid Vesal](person)?
+    - In welcher Abteilung arbeitet [Majid Vesal](person)?
+
+    - Welche Position hat [Florian Weber](person)?  
+    - Am welche Position hat [Florian Weber](person) arbeitet?
+    - In welche department arbeitet [Florian Weber](person)?
+    - als was arbeitet [Florian Weber](person)?
+    - Können Sie mir etwas über [Florian Weber](person) sagen
+    - Kennst du [Florian Weber](person)?
+    - In welche department arbeitet [Florian Weber](person)?
+    - Erzähl mir von [Florian Weber](person)?
+    - erzähl mir davon [Florian Weber](person)?
+    - In welcher Abteilung arbeitet [Florian Weber](person)?
+
 - intent: preise_question
   examples: |
     - Hat [Axxessio](company) eine Auszeichnung gewonnen?
@@ -372,6 +650,155 @@ nlu:
     - wie groß denkst du ist [Axxessio](company)?
     - welcher unternehmensgröße ordnen sie [Axxessio](company) zu?
 
+- intent: culture_question
+  examples: |
+    - Erzähl mir mehr von Axxesio
+    - erzähl mir mehr über das unternehmen
+    - erzähl mir mehr über die firma
+    - was ist die kultur des unternehmens
+    - was ist die kultur des firma
+    - Wie konzentriert sich das Unternehmen auf die Mitarbeiterentwicklung?
+    - Worauf kann ich mich im Unternehmen freuen?
+    - Worauf kann ich mich in der Firma freuen?
+
+- intent: job_question
+  examples: |
+    - Gibt es eine Stelle für einen [Computerlinguisten](job_title)
+    - Gibt es eine öffnung für einen [Computerlinguisten](job_title)
+    - alle Jobs auflisten für [Computerlinguisten](job_title)
+    - Ich möchte die Jobs für [Computerlinguisten](job_title) kennen
+    - Machst du irgendwelche Jobs für [Computerlinguisten](job_title)
+    - Gibt es eine Stelle für einen [App Developer](job_title)
+    - Gibt es eine öffnung für einen [App Developer](job_title)
+    - alle Jobs auflisten für [App Developer](job_title)
+    - Ich möchte die Jobs für [App Developer](job_title) kennen
+    - Machst du irgendwelche Jobs für [App Developer](job_title)
+    - Gibt es eine Stelle für einen [App Entwickler](job_title)
+    - Gibt es eine öffnung für einen [App Entwickler](job_title)
+    - alle Jobs auflisten für [App  Entwickler](job_title)
+    - Ich möchte die Jobs für [App  Entwickler](job_title) kennen
+    - Machst du irgendwelche Jobs für [App  Entwickler](job_title)
+    - Gibt es eine Stelle für einen [Geschäftsführung](job_title)
+    - Gibt es eine öffnung für einen [Geschäftsführung](job_title)
+    - alle Jobs auflisten für [Geschäftsführung](job_title)
+    - Ich möchte die Jobs für [Geschäftsführung](job_title) kennen
+    - Machst du irgendwelche Jobs für [Geschäftsführung](job_title)
+    - Gibt es eine Stelle für einen [Java Developer](job_title)
+    - Gibt es eine öffnung für einen [Java Developer](job_title)
+    - alle Jobs auflisten für [Java Developer](job_title)
+    - Ich möchte die Jobs für [Java Developer](job_title) kennen
+    - Machst du irgendwelche Jobs für [Java Developer](job_title)
+    - Gibt es eine Stelle für einen [Java Entwickler](job_title)
+    - Gibt es eine öffnung für einen [Java Entwickler](job_title)
+    - alle Jobs auflisten für [Java  Entwickler](job_title)
+    - Ich möchte die Jobs für [Java  Entwickler](job_title) kennen
+    - Machst du irgendwelche Jobs für [Java  Entwickler](job_title)
+    - Gibt es eine Stelle für einen [Design](job_title)
+    - Gibt es eine öffnung für einen [Design](job_title)
+    - alle Jobs auflisten für [Design](job_title)
+    - Ich möchte die Jobs für [Design](job_title) kennen
+    - Machst du irgendwelche Jobs für [Design](job_title)
+    - Gibt es eine Stelle für einen [Python Developer](job_title)
+    - Gibt es eine öffnung für einen [Python Developer](job_title)
+    - alle Jobs auflisten für [Python Developer](job_title)
+    - Ich möchte die Jobs für [Python Developer](job_title) kennen
+    - Machst du irgendwelche Jobs für [Python Developer](job_title)
+    - Gibt es eine Stelle für einen [Python Entwickler](job_title)
+    - Gibt es eine öffnung für einen [Python Entwickler](job_title)
+    - alle Jobs auflisten für [Python  Entwickler](job_title)
+    - Ich möchte die Jobs für [Python  Entwickler](job_title) kennen
+    - Machst du irgendwelche Jobs für [Python  Entwickler](job_title)
+    - Gibt es eine Stelle für einen [Testautomatisierer](job_title)
+    - Gibt es eine öffnung für einen [Testautomatisierer](job_title)
+    - alle Jobs auflisten für [Testautomatisierer](job_title)
+    - Ich möchte die Jobs für [Testautomatisierer](job_title) kennen
+    - Machst du irgendwelche Jobs für [Testautomatisierer](job_title)
+    - Gibt es eine Stelle für einen [Frontend Entwickler](job_title)
+    - Gibt es eine öffnung für einen [Frontend Entwickler](job_title)
+    - alle Jobs auflisten für [Frontend Entwickler](job_title)
+    - Ich möchte die Jobs für [Frontend Entwickler](job_title) kennen
+    - Machst du irgendwelche Jobs für [Frontend Entwickler](job_title)
+    - Gibt es eine Stelle für einen [Frontend developer](job_title)
+    - Gibt es eine öffnung für einen [Frontend developer](job_title)
+    - alle Jobs auflisten für [Frontend developer](job_title)
+    - Ich möchte die Jobs für [Frontend developer](job_title) kennen
+    - Machst du irgendwelche Jobs für [Frontend developer](job_title)
+    - Gibt es eine Stelle für einen [Web Developer](job_title)
+    - Gibt es eine öffnung für einen [Web Developer](job_title)
+    - alle Jobs auflisten für [Web Developer](job_title)
+    - Ich möchte die Jobs für [Web Developer](job_title) kennen
+    - Machst du irgendwelche Jobs für [Web Developer](job_title)
+    - Gibt es eine Stelle für einen [Web Entwickler](job_title)
+    - Gibt es eine öffnung für einen [Web Entwickler](job_title)
+    - alle Jobs auflisten für [Web  Entwickler](job_title)
+    - Ich möchte die Jobs für [Web  Entwickler](job_title) kennen
+    - Machst du irgendwelche Jobs für [Web  Entwickler](job_title)
+    - Gibt es eine Stelle für einen [mobile Entwickler](job_title)
+    - Gibt es eine öffnung für einen [mobile Entwickler](job_title)
+    - alle Jobs auflisten für [mobile Entwickler](job_title)
+    - Ich möchte die Jobs für [mobile Entwickler](job_title) kennen
+    - Machst du irgendwelche Jobs für [mobile Entwickler](job_title)
+    - Gibt es eine Stelle für einen [mobile developer](job_title)
+    - Gibt es eine öffnung für einen [mobile developer](job_title)
+    - alle Jobs auflisten für [mobile developer](job_title)
+    - Ich möchte die Jobs für [mobile developer](job_title) kennen
+    - Machst du irgendwelche Jobs für [mobile developer](job_title)
+    - Gibt es eine Stelle für einen [Human Resource](job_title)
+    - Gibt es eine öffnung für einen [Human Resource](job_title)
+    - alle Jobs auflisten für [Human Resource](job_title)
+    - Ich möchte die Jobs für [Human Resource](job_title) kennen
+    - Machst du irgendwelche Jobs für [Human Resource](job_title)
+    - Gibt es eine Stelle für Kategorie [Software Development](job_dep)
+    - Gibt es eine öffnung für Kategorie [Software Development](job_dep)
+    - Gibt es eine Stelle in Kategorie [Software Development](job_dep)
+    - Gibt es eine öffnung in Kategorie [Software Development](job_dep)
+    - Ich möchte die Jobs für [Software Development](job_dep) kennen
+    - Machst du irgendwelche Jobs für [Software Development Entwickler](job_dep)
+    - Gibt es eine Stelle für Kategorie [Central Functions](job_dep)
+    - Gibt es eine öffnung für Kategorie [Central Functions](job_dep)
+    - Gibt es eine Stelle in Kategorie [Central Functions](job_dep)
+    - Gibt es eine öffnung in Kategorie [Central Functions](job_dep)
+    - Ich möchte die Jobs für [Central Functions](job_dep) kennen
+    - Machst du irgendwelche Jobs für [Central Functions Entwickler](job_dep)
+    - Gibt es eine Stelle für Kategorie [Software Testing](job_dep)
+    - Gibt es eine öffnung für Kategorie [Software Testing](job_dep)
+    - Gibt es eine Stelle in Kategorie [Software Testing](job_dep)
+    - Gibt es eine öffnung in Kategorie [Software Testing](job_dep)
+    - Ich möchte die Jobs für [Software Testing](job_dep) kennen
+    - Machst du irgendwelche Jobs für [Software Testing Entwickler](job_dep)
+    - Gibt es eine Stelle für Kategorie [Business Consulting](job_dep)
+    - Gibt es eine öffnung für Kategorie [Business Consulting](job_dep)
+    - Gibt es eine Stelle in Kategorie [Business Consulting](job_dep)
+    - Gibt es eine öffnung in Kategorie [Business Consulting](job_dep)
+    - Ich möchte die Jobs für [Business Consulting](job_dep) kennen
+    - Machst du irgendwelche Jobs für [Business Consulting Entwickler](job_dep)
+    - Gibt es eine Stelle für Kategorie [IT-Architecture](job_dep)
+    - Gibt es eine öffnung für Kategorie [IT-Architecture](job_dep)
+    - Gibt es eine Stelle in Kategorie [IT-Architecture](job_dep)
+    - Gibt es eine öffnung in Kategorie [IT-Architecture](job_dep)
+    - Ich möchte die Jobs für [IT-Architecture](job_dep) kennen
+    - Machst du irgendwelche Jobs für [IT-Architecture Entwickler](job_dep)
+    - Gibt es eine Stelle für Karrierlevel [Professional](job_level)
+    - Gibt es eine öffnung für Karrierlevel [Professional](job_level)
+    - Ich möchte die Jobs für Karrierlevel [Professional](job_level) kennen
+    - Machst du irgendwelche Jobs für Karrierlevel [Professional](job_level)
+    - Gibt es eine Stelle für Karrierlevel [Young Professional](job_level)
+    - Gibt es eine öffnung für Karrierlevel [Young Professional](job_level)
+    - Ich möchte die Jobs für Karrierlevel [Young Professional](job_level) kennen
+    - Machst du irgendwelche Jobs für Karrierlevel [Young Professional](job_level)
+    - Gibt es eine Stelle für Karrierlevel [Freelancer](job_level)
+    - Gibt es eine öffnung für Karrierlevel [Freelancer](job_level)
+    - Ich möchte die Jobs für Karrierlevel [Freelancer](job_level) kennen
+    - Machst du irgendwelche Jobs für Karrierlevel [Freelancer](job_level)
+    - Gibt es eine Stelle für Karrierlevel [Werkstudent](job_level)
+    - Gibt es eine öffnung für Karrierlevel [Werkstudent](job_level)
+    - Ich möchte die Jobs für Karrierlevel [Werkstudent](job_level) kennen
+    - Machst du irgendwelche Jobs für Karrierlevel [Werkstudent](job_level)
+    - Gibt es eine Stelle für Karrierlevel [Praktikant](job_level)
+    - Gibt es eine öffnung für Karrierlevel [Praktikant](job_level)
+    - Ich möchte die Jobs für Karrierlevel [Praktikant](job_level) kennen
+    - Machst du irgendwelche Jobs für Karrierlevel [Praktikant](job_level)
+
 - intent: niederlassung_question
   examples: |
     - Welche Niederlassungen hat [Axxessio](company)?
@@ -380,12 +807,13 @@ nlu:
     - wo basiert [Axxessio](company)?    
     - wo ist das büro in Deutschland?
     - wo ist das büro?
+    - in welchem stadt ist axxessio
    
 
 - intent: address_question
   examples: |
-    - kannst du mir die Adresse für Haupsitz geben?
-    - kannst du mir die Adresse für Niederlassungen geben?
+    - kannst du mir die Adresse für [Haupsitz](location) geben?
+    - kannst du mir die Adresse für [Niederlassungen](location) geben?
     - kannst du mir die Adresse geben
     - kennen Sie die Adresse von [Axxessio](company)?
     - kennst du die Adresse von [Axxessio](company)?
@@ -397,6 +825,8 @@ nlu:
     - Kennst du die Adresse in [Darmstadt](location)
     - [Bonn](location)
     - [Darmstadt](location)
+    - [Haupsitz](location)
+    - [Niederlassungen](location)
 
 
 - intent: client_question
@@ -407,33 +837,17 @@ nlu:
 
 - intent: company_types
   examples: |
-    - hospitality
-    - event
-    - banking
-    - shipping
-    - medical
-    - research
-    - machinery
-    - appliances
-    - public
-    - services
-    - telco
-    - electronics
-
-- synonym: Bonn
-  examples: |
-    - bonn
-    - Haupsitz
-    - haupsitz
-    - haupt
-    - main
-    - head office
-
-- synonym: Darmstadt
-  examples: |
-    - darmstadt
-    - Niederlassungen
-    - niederlassungen
-    - branch    
+    - [hospitality](client_cat)
+    - [event](client_cat)
+    - [banking](client_cat)
+    - [shipping](client_cat)
+    - [medical](client_cat)
+    - [research](client_cat)
+    - [machinery](client_cat)
+    - [appliances](client_cat)
+    - [public](client_cat)
+    - [services](client_cat)
+    - [telco](client_cat)
+    - [electronics](client_cat)
 
 
