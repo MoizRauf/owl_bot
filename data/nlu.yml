@@ -127,6 +127,14 @@ nlu:
     - Bist du sicher, dass du ein Bot bist?
     - Bist du ein Bot
 
+- intent: confirm
+  examples: |
+    - Konfirm
+
+- intent: not_confirm
+  examples: |
+    - nicht Konfirm
+
 - intent: affirm
   examples: |
     - Akzeptieren
@@ -358,6 +366,99 @@ nlu:
     - Nein danke
     - Nichts bestimmtes.
 
+- intent: help
+  examples: |
+    - Ich brauche deine Hilfe
+    - Ich brauche dich etwas für mich zu tun
+    - Ich brauche eine Hand
+    - wirst du mir helfen
+    - kannst du etwas für mich machen
+    - Hilf mir bei einem Problem
+    - können Sie mir helfen
+    - Hilf mir
+    - Hilfe
+    - Ich brauche Hilfe
+    - ihr könnt mir helfen
+    - Kannst du mir mit etwas helfen
+    - kannst du helfen
+    - helfen
+    - kannst du mir helfen
+    - Du hilfst mir
+    - hilfst du mir
+    - kann mir helfen
+    - Könntest du mir helfen
+    - Kannst du mir helfen
+    - brauchen Sie Hilfe
+    - Ich brauche dich
+    - Kannst du mir jetzt helfen
+    - Ich will deine Hilfe
+    - brauche deine Hilfe
+    - assistiere mir
+    - können Sie mir damit helfen
+    - Ich brauche dich jetzt
+    - könntest du mir helfen
+    - sos
+    - willst du mir helfen
+    - Bitte hilf mir
+    - kannst du uns helfen
+    - tu mir einen Gefallen
+    - help
+    - Ich bin schlaflos
+    - Ich kann nicht schlafen
+    - Ich kann nicht einschlafen
+    - Ich möchte, dass du mir antwortest
+    - Antworten
+    - beantworte meine Frage
+    - Gib mir eine Antwort
+    - beantworte die Frage
+    - Kannst du meine Frage beantworten
+    - sag mir die Antwort
+    - antworte
+    - Gib mir die Antwort
+    - Ich habe eine Frage
+    - Ich möchte, dass du meine Frage beantwortest
+    - Beantworte einfach die Frage
+    - Kannst du mir antworten
+    - Kannst du mir eine Frage beantworten
+    - kannst Du antworten
+    - Fragen beantworten
+    - Ich möchte die Antwort jetzt
+    - Beantworte einfach meine Frage
+
+- intent: how_are_you
+  examples: |
+    -  Wie ist dein Morgen bisher
+    -  Wie geht es dir
+    -  Wie läuft dein Tag
+    -  ist alles in Ordnung
+    -  geht es dir gut
+    -  bist du in Ordnung
+    -  Ist alles in Ordnung
+    -  Wie geht es dir heute
+    -  Wie geht's
+    -  wie fühlst du dich
+    -  Wie ist es dir gegangen
+    -  Wie ist das
+    -  Wie gehts
+    -  Wie geht es Heute
+    -  Wie ist dein Abend
+    -  wie war dein Tag
+    -  hast du einen guten Tag
+    -  Ich hoffe, dein Tag läuft gut
+    -  Ich hoffe, Sie haben einen schönen Abend
+    -  wie ist das Leben
+    -  Es geht mir gut und Ihnen
+    -  wie ist dein Leben
+    -  Wie war dein Tag
+    -  Wie ist dein Morgen
+    -  wie ist es mit Ihnen
+    -  Wie ist dein Tag
+    -  wie geht es dir heute Morgen
+    -  wie geht es dir
+    -  bot wie geht es dir
+    -  hallo digga was geht
+    -  hallo wie geht es dir
+
 - intent: cant_help
   examples: |
     - Ok, dann kannst du mir nicht helfen
@@ -498,18 +599,17 @@ nlu:
     - Erzähl mir von [sacha peters](person)?
     - erzähl mir davon [sacha peters](person)?
     - In welcher Abteilung arbeitet [sacha peters](person)?
-    
     - Welche Position hat [Prof. Dr. Goodarz Mahbobi](person)?
     - Am welche Position hat [Prof. Dr. Goodarz Mahbobi](person) arbeitet?
     - In welche department arbeitet [Prof. Dr. Goodarz Mahbobi](person)?
     - als was arbeitet [Prof. Dr. Goodarz Mahbobi](person)?
     - Können Sie mir etwas über [Prof. Dr. Goodarz Mahbobi](person) sagen
+    - was machst [Prof. Dr. Goodarz Mahbobi](person)
     - Kennst du [Prof. Dr. Goodarz Mahbobi](person)?
     - In welche department arbeitet [Prof. Dr. Goodarz Mahbobi](person)?
     - Erzähl mir von [Prof. Dr. Goodarz Mahbobi](person)?
     - erzähl mir davon [Prof. Dr. Goodarz Mahbobi](person)?
     - In welcher Abteilung arbeitet [Prof. Dr. Goodarz Mahbobi](person)?
-
     - Welche Position hat [Keyvan Mahboobi](person)?
     - Am welche Position hat [Keyvan Mahboobi](person) arbeitet?
     - In welche department arbeitet [Keyvan Mahboobi](person)?
@@ -517,10 +617,10 @@ nlu:
     - Können Sie mir etwas über [Keyvan Mahboobi](person) sagen
     - Kennst du [Keyvan Mahboobi](person)?
     - In welche department arbeitet [Keyvan Mahboobi](person)?
+    - was machst [Keyvan Mahboobi](person)
     - Erzähl mir von [Keyvan Mahboobi](person)?
     - erzähl mir davon [Keyvan Mahboobi](person)?
     - In welcher Abteilung arbeitet [Keyvan Mahboobi](person)?
-
     - Welche Position hat [Jin-Young Lee](person)?
     - Am welche Position hat [Jin-Young Lee](person) arbeitet?
     - In welche department arbeitet [Jin-Young Lee](person)?
@@ -530,8 +630,8 @@ nlu:
     - In welche department arbeitet [Jin-Young Lee](person)?
     - Erzähl mir von [Jin-Young Lee](person)?
     - erzähl mir davon [Jin-Young Lee](person)?
+    - was machst [Jin-Young Lee](person)
     - In welcher Abteilung arbeitet [Jin-Young Lee](person)?
-
     - Welche Position hat [Oliver Wronka](person)?
     - Am welche Position hat [Oliver Wronka](person) arbeitet?
     - In welche department arbeitet [Oliver Wronka](person)?
@@ -542,7 +642,7 @@ nlu:
     - Erzähl mir von [Oliver Wronka](person)?
     - erzähl mir davon [Oliver Wronka](person)?
     - In welcher Abteilung arbeitet [Oliver Wronka](person)?
-
+    - was machst  [Oliver Wronka](person)?
     - Welche Position hat [Marius Caspar](person)? 
     - Am welche Position hat [Marius Caspar](person) arbeitet?
     - In welche department arbeitet [Marius Caspar](person)?
@@ -553,7 +653,7 @@ nlu:
     - Erzähl mir von [Marius Caspar](person)?
     - erzähl mir davon [Marius Caspar](person)?
     - In welcher Abteilung arbeitet  [Marius Caspar](person)?
-
+    - was machst [Marius Caspar](person)?
     - Welche Position hat [Dr. Dirk Meyerhoff](person)? 
     - Am welche Position hat [Dr. Dirk Meyerhoff](person) arbeitet?
     - In welche department arbeitet [Dr. Dirk Meyerhoff](person)?
@@ -564,10 +664,11 @@ nlu:
     - Erzähl mir von [Dr. Dirk Meyerhoff](person)?
     - erzähl mir davon [Dr. Dirk Meyerhoff](person)?
     - In welcher Abteilung arbeitet [Dr. Dirk Meyerhoff](person)?
-
+    - was machst [Dr. Dirk Meyerhoff](person)?
     - Welche Position hat [Thomas Temeschinko](person)? 
     - Am welche Position hat [Thomas Temeschinko](person) arbeitet?
     - In welche department arbeitet [Thomas Temeschinko](person)?
+    - was machst [Thomas Temeschinko](person)?
     - als was arbeitet [Thomas Temeschinko](person)?
     - Können Sie mir etwas über [Thomas Temeschinko](person) sagen
     - Kennst du [Thomas Temeschinko](person)?
@@ -575,7 +676,6 @@ nlu:
     - Erzähl mir von [Thomas Temeschinko](person)?
     - erzähl mir davon [Thomas Temeschinko](person)?
     - In welcher Abteilung arbeitet [Thomas Temeschinko](person)?
-
     - Welche Position hat [Andreas Bartsch](person)? 
     - Am welche Position hat [Andreas Bartsch](person) arbeitet?
     - In welche department arbeitet [Andreas Bartsch](person)?
@@ -586,7 +686,7 @@ nlu:
     - Erzähl mir von [Andreas Bartsch](person)?
     - erzähl mir davon [Andreas Bartsch](person)?
     - In welcher Abteilung arbeitet [Andreas Bartsch](person)?
-
+    - was machst [Andreas Bartsch](person)?
     - Welche Position hat [Florian Over](person)? 
     - Am welche Position hat [Florian Over](person) arbeitet?
     - In welche department arbeitet [Florian Over](person)?
@@ -597,7 +697,7 @@ nlu:
     - Erzähl mir von [Florian Over](person)?
     - erzähl mir davon [Florian Over](person)?
     - In welcher Abteilung arbeitet [Florian Over](person)?
-
+    - was machst [Florian Over](person)?
     - Welche Position hat [Omid Rezaei](person)? 
     - Am welche Position hat [Omid Rezaei](person) arbeitet?
     - In welche department arbeitet [Omid Rezaei](person)?
@@ -608,7 +708,7 @@ nlu:
     - Erzähl mir von [Omid Rezaei](person)?
     - erzähl mir davon [Omid Rezaei](person)?
     - In welcher Abteilung arbeitet [Omid Rezaei](person)?
-
+    - was machst [Omid Rezaei](person)?
     - Welche Position hat [Majid Vesal](person)? 
     - Am welche Position hat [Majid Vesal](person) arbeitet?
     - In welche department arbeitet [Majid Vesal](person)?
@@ -619,7 +719,7 @@ nlu:
     - Erzähl mir von [Majid Vesal](person)?
     - erzähl mir davon [Majid Vesal](person)?
     - In welcher Abteilung arbeitet [Majid Vesal](person)?
-
+    - was machst [Majid Vesal](person)?
     - Welche Position hat [Florian Weber](person)?  
     - Am welche Position hat [Florian Weber](person) arbeitet?
     - In welche department arbeitet [Florian Weber](person)?
@@ -630,6 +730,98 @@ nlu:
     - Erzähl mir von [Florian Weber](person)?
     - erzähl mir davon [Florian Weber](person)?
     - In welcher Abteilung arbeitet [Florian Weber](person)?
+    - Was machst [Florian Weber](person)?
+    - Wer ist der [CEO](person_rank) von axxessio?
+    - Nennen Sie alle [CEO](person_rank)
+    - Wer sind die [CEO](person_rank) im axxessio
+    - Wer sind die [CEO](person_rank) im Firma
+    - geben Sie die Namen an [CEO](person_rank)
+    - Wer ist der [ProkuristHead](person_rank) von axxessio?
+    - Nennen Sie alle [ProkuristHead](person_rank)
+    - Wer sind die [ProkuristHead](person_rank) im axxessio
+    - Wer sind die [ProkuristHead](person_rank) im Firma
+    - geben Sie die Namen an [ProkuristHead](person_rank)
+    - Wer ist der [Senior Manager](person_rank) von axxessio?
+    - Nennen Sie alle [Senior Manager](person_rank)
+    - Wer sind die [Senior Manager](person_rank) im axxessio
+    - Wer sind die [Senior Manager](person_rank) im Firma
+    - geben Sie die Namen an [Senior Manager](person_rank)
+    - Wer ist der [Executive Software-Architect](person_rank) von axxessio?
+    - Nennen Sie alle [Executive Software-Architect](person_rank)
+    - Wer sind die [Executive Software-Architect](person_rank) im axxessio
+    - Wer sind die [Executive Software-Architect](person_rank) im Firma
+    - geben Sie die Namen an [Executive Software-Architect](person_rank)
+    - Wer ist der [Manager](person_rank) von axxessio?
+    - Nennen Sie alle [Manager](person_rank)
+    - Wer sind die [Manager](person_rank) im axxessio
+    - Wer sind die [Manager](person_rank) im Firma
+    - geben Sie die Namen an [Manager](person_rank)
+    - Wer ist der [Senior IT-Manager](person_rank) von axxessio?
+    - Nennen Sie alle [Senior IT-Manager](person_rank)
+    - Wer sind die [Senior IT-Manager](person_rank) im axxessio
+    - Wer sind die [Senior IT-Manager](person_rank) im Firma
+    - geben Sie die Namen an [Senior IT-Manager](person_rank)
+    - Wer ist der [Senior Test Manager](person_rank) von axxessio?
+    - Nennen Sie alle [Senior Test Manager](person_rank)
+    - Wer sind die [Senior Test Manager](person_rank) im axxessio
+    - Wer sind die [Senior Test Manager](person_rank) im Firma
+    - geben Sie die Namen an [Senior Test Manager](person_rank)
+    - Wer ist der [Principal Software Developer](person_rank) von axxessio?
+    - Nennen Sie alle [Principal Software Developer](person_rank)
+    - Wer sind die [Principal Software Developer](person_rank) im axxessio
+    - Wer sind die [Principal Software Developer](person_rank) im Firma
+    - geben Sie die Namen an [Principal Software Developer](person_rank)
+    - Wer ist der [Lead Software Developer](person_rank) von axxessio?
+    - Nennen Sie alle [Lead Software Developer](person_rank)
+    - Wer sind die [Lead Software Developer](person_rank) im axxessio
+    - Wer sind die [Lead Software Developer](person_rank) im Firma
+    - geben Sie die Namen an [Lead Software Developer](person_rank)
+    - Wer ist der [Team Lead](person_rank) von axxessio?
+    - Nennen Sie alle [Team Lead](person_rank)
+    - Wer sind die [Team Lead](person_rank) im axxessio
+    - Wer sind die [Team Lead](person_rank) im Firma
+    - geben Sie die Namen an [Team Lead](person_rank)
+    - Wer ist der Team Lead von [Human Resources and Finances](job_dep) in axxessio?
+    - Nennen Sie alle Leiter [Human Resources and Finances](job_dep)
+    - wer ist der gruppenleiter [Human Resources and Finances](job_dep)
+    - wer leitet die [Human Resources and Finances](job_dep)
+    - Wer ist der Team Lead von [Business Consulting and Digital Management](job_dep) in axxessio?
+    - Nennen Sie alle Leiter [Business Consulting and Digital Management](job_dep)
+    - wer ist der gruppenleiter [Business Consulting and Digital Management](job_dep)
+    - wer leitet die [Business Consulting and Digital Management](job_dep)
+    - Wer ist der Team Lead von [Software Engineering](job_dep) in axxessio?
+    - Nennen Sie alle Leiter [Software Engineering](job_dep)
+    - wer ist der gruppenleiter [Software Engineering](job_dep)
+    - wer leitet die [Software Engineering](job_dep)
+    - Wer ist der Team Lead von [Executive Software-Architect](job_dep) in axxessio?
+    - Nennen Sie alle Leiter [Executive Software-Architect](job_dep)
+    - wer ist der gruppenleiter [Executive Software-Architect](job_dep)
+    - wer leitet die [Executive Software-Architect](job_dep)
+    - Wer ist der Team Lead von [Business and Technology Innovation](job_dep) in axxessio?
+    - Nennen Sie alle Leiter [Business and Technology Innovation](job_dep)
+    - wer ist der gruppenleiter [Business and Technology Innovation](job_dep)
+    - wer leitet die [Business and Technology Innovation](job_dep)
+    - Wer ist der Team Lead von [Digital Consulting and Innovation](job_dep) in axxessio?
+    - Nennen Sie alle Leiter [Digital Consulting and Innovation](job_dep)
+    - wer ist der gruppenleiter [Digital Consulting and Innovation](job_dep)
+    - wer leitet die [Digital Consulting and Innovation](job_dep)
+    - Wer ist der Team Lead von [Test Automation](job_dep) in axxessio?
+    - Nennen Sie alle Leiter [Test Automation](job_dep)
+    - wer ist der gruppenleiter [Test Automation](job_dep)
+    - wer leitet die [Test Automation](job_dep)
+    - Wer ist der Team Lead von [New Technologies](job_dep) in axxessio?
+    - Nennen Sie alle Leiter [New Technologies](job_dep)
+    - wer ist der gruppenleiter [New Technologies](job_dep)
+    - wer leitet die [New Technologies](job_dep)
+    - Wer ist der Team Lead von [Test Management](job_dep) in axxessio?
+    - Nennen Sie alle Leiter [Test Management](job_dep)
+    - wer ist der gruppenleiter [Test Management](job_dep)
+    - wer leitet die [Test Management](job_dep)
+    - Wer ist der Team Lead von [Software Development](job_dep) in axxessio?
+    - Nennen Sie alle Leiter [Software Development](job_dep)
+    - wer ist der gruppenleiter [Software Development](job_dep)
+    - wer leitet die [Software Development](job_dep)
+
 
 - intent: preise_question
   examples: |
@@ -807,6 +999,7 @@ nlu:
     - wo basiert [Axxessio](company)?    
     - wo ist das büro in Deutschland?
     - wo ist das büro?
+    - wo ist axxessio?
     - in welchem stadt ist axxessio
    
 
@@ -834,6 +1027,7 @@ nlu:
    - Wie viele Clients hat [Axxessio](company)?
    - Welche Kunden hat [Axxessio](company)?
    - Welche Art von Clients [Axxessio](company) hat
+   - in welchem thema hat axxessio gearbeitet
 
 - intent: company_types
   examples: |

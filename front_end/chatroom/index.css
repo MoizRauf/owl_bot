@@ -8,9 +8,35 @@
   width: 360px;
   z-index: 100;
   box-shadow: 0 0 3em black;
+  position: absolute;
+    bottom: 5px;
+    left: 1400px;
+  closed: true;
+}
+/* Trick */
+.flex-wrapper {
+  display: flex;
+  min-height: 40vh;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-@media (max-width: 400px) {
+h1 {
+  text-align: center;
+}
+h4 {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 2px;
+  bottom: 0px;
+  background-color: whitesmoke;
+  color: black;
+}
+
+@media (max-width: 600px) {
   .chat-container {
     margin: 20px 10px;
     width: auto;
@@ -19,17 +45,20 @@
 
 .chat-demo-button {
   border-radius: 3px;
-  color: #343d4e;
+  color: #2e86c1;
   border: 2px solid #343d4e;
   padding: 5px 10px;
   background-color: white;
   outline: none;
   font-size: 12px;
   cursor: pointer;
+  content: "posten";
 }
 .chat-demo-button:hover {
   background-color: rgba(52, 61, 78, 0.3);
+  
 }
 .chat-demo-button:active {
   background-color: rgba(52, 61, 78, 0.8);
+  
 }

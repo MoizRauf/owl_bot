@@ -5,21 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="./dist/Chatroom.css">
     <link rel="stylesheet" type="text/css" href="./index.css">
-    <title>Chatroom Example</title>
+    <title>Owl bot</title>
   </head>
   <body>
+    <h1>Axxessio Chatbot Demo</h1>
+
+
+
+
+    <section>
+      <h3>Über Owl</h3>
+      Dieser virtuelle Assistent ist in der Lage, Ihnen Informationen zu verschiedenen Aspekten von Axxessio zu geben. 
+      Owl ist darauf ausgelegt, die deutsche Sprache zu verstehen und zu beantworten.
+      <section>
+<section>
+  <h3>Themen</h3>
+  Es unterstützt die folgenden Benutzerziele:
+ <ol>
+<li>Bietet Informationen zu verschiedenen <strong>Kunden</strong>  mit denen Axxessio zusammengearbeitet hat.</li>
+<li>Abrufen der <strong> Adressdaten</strong>.</li>
+<li>Beantwortung der <strong>Große</strong> des Unternehmens.</li>
+<li>Auflistung der <strong>Preise</strong> die Axxessio verliehen wurden..</li>
+<li>Informationen zum <strong> Führungsteam </strong> des Unternehmens <ul>
+<li>Suche nach Namen</li>
+<li>Abteilung</li>
+<li>Position  </li>
+</ul>
+</li>
+<li><strong>Ethos</strong> von Axxessio</li>
+<li>Alle neuen  <strong>Stellenangebote</strong> im Firma<ul>
+<li>Suche nach Titel</li>
+<li>karrier level</li>
+<li>Abteilung </li>
+</ul>
+</li>
+</ol>
+<section>
+
+  <div class="flex-wrapper">
+  <div class="container"></div>
     <div class="chat-container"></div>
     <script src="./dist/Chatroom.js"></script>
     <script type="text/javascript">
 window.chatroom = new window.Chatroom({
-  title: "Axxessio Owl bot",
+  title: "Axxessio Owl-bot",
   container: document.querySelector(".chat-container"),
-  welcomeMessage: "hallo",
+  welcomeMessage: "sagen Sie Hallo, um loszulegen ",
   host: "http://localhost:5005",
   speechRecognition: "de",
-  voiceLang: "de"
+  profileAvatar: "./assets/owl1.svg",
+  openLauncherImage: "./assets/owl1.svg",
+  closeImage: "./assets/owl1.svg",
+  voiceLang: "de",
+  showMessageDate: true,
+   embedded: true,
+   
 });
 window.chatroom.openChat();
 </script>
+  <div class="footer"> <footer><p>Author: Moiz Rauf</p>
+  <p><a href="mailto:moiz.rauf@hotmail.com">moiz.rauf@hotmail.com</a></p>
+</footer> 
+</div>
+</div>
+
+  
+  
   </body>
+
 </html>

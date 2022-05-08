@@ -8,6 +8,20 @@ stories:
   - action: utter_greet
   - action: utter_get_started
 
+- story: greet_how_doing
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: how_are_you
+  - action: utter_howdoing
+  - action: utter_get_started
+
+- story: need_help
+  steps:
+  - intent: help
+  - action: utter_help_response
+  - action: utter_get_started
+
 - story: greet_canthelp
   steps:
   - intent: cant_help
@@ -51,9 +65,8 @@ stories:
 - story: get_address_affirm
   steps:
     - action: utter_location_question
-    - intent: affirm
-    - action: utter_location_Bonn
-    - action: utter_location_Darmstadt
+    - intent: confirm
+    - action: action_show_both_address
     - action: utter_thankyou_anything_else
 
 - story: incorrect_location
@@ -64,7 +77,7 @@ stories:
 - story: get_address_deny
   steps:
     - action: utter_location_question
-    - intent: deny
+    - intent: not_confirm
     - action: utter_thankyou_anything_else
 
 - story: ask_address
@@ -113,25 +126,11 @@ stories:
     - intent: job_question
     - action: action_show_jobs
 
-#- story: find_job_by_department
-#  steps: 
-#    - intent: job_by_department
-#    - action: action_show_jobs
-
-#- story: find_job_by_level
-#  steps: 
-#    - intent: job_by_level
-#    - action: action_show_jobs
-
 - story: no_job_found
   steps:
     - action: utter_no_job_found
     - action: utter_get_started
-#- story: exit_client_detail
-#  steps:
-#    - action: utter_provide_category
-#    - intent: deny
-#    - action: utter_thankyou_anything_else
+
     
 
 

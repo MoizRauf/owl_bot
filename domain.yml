@@ -4,7 +4,11 @@ intents:
   - greet
   - goodbye
   - affirm
+  - confirm
   - deny
+  - not_confirm
+  - help
+  - how_are_you
   - out_of_scope
   - cant_help
   - search_by_name
@@ -20,12 +24,6 @@ intents:
 
 
 slots:
-#  client_category:
-#    type: categorical
-#    values:
-#      - telco
-#      - t1
-#      - t2 # figure out these later
   client_category:
     type: text   
     mappings:
@@ -43,6 +41,12 @@ slots:
     mappings:
     - type: from_entity
       entity: person
+
+  person_rank:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: person_rank
 
   job_title:
     type: text
@@ -62,11 +66,14 @@ slots:
     - type: from_entity
       entity: job_level
 
+
+
 entities:
   - location
   - company
   - client_cat
   - person
+  - person_rank
   - job_level
   - job_dep
   - job_title
@@ -86,15 +93,23 @@ responses:
   - text: "Es tut mir leid, dass ich dir nicht helfen konnte. Wenn Sie allgemeine Fragen zu Axxessio haben,
      kontaktiere uns unter [link](https://www.axxessio.com/de/kontakt) für alles andere."
 
+  utter_problem_answering:
+  - text: "Tut mir leid, dass ich Probleme hatte, darauf zu antworten."
   
+  utter_howdoing:
+  - text: "mir geht es großartig! Danke für die Frage."
+
   utter_goodbye:
   - text: "Auf Wiedersehen"
 
   utter_thankyou_anything_else:
-  - text: "Möchten Sie noch etwas wissen?" 
+  - text: "Kann ich dir sonst noch weiterhelfen?" 
+
+  utter_help_response:
+  - text: "Wie kann ich Ihnen heute helfen?" 
 
   utter_size_info:
-  - text: "Axxessio ist ein mittelstandisches firma"
+  - text: "Axxessio ist ein mittelstandisches firma."
   - text: "Axxessio hat von 51 bis 200 mitarbeiter"
   
   utter_incorrect_location:
@@ -117,7 +132,7 @@ responses:
   - text: "Toleranz und Respekt füreinander sind sehr wichtig"
 
   utter_provide_correct_name:
-  - text: "Bitte geben Sie den korrekten Namen an"
+  - text: "Bitte geben Sie den korrekten Informationen an"
   
   utter_preise_won:
   - text: " Axxessio hat viele verschiedenen Preise gewonnen."
@@ -131,11 +146,17 @@ responses:
   - text: "Im 2020 Axxessio erhält die Silbermedaille in Corporate Social Responsibility (CSR)"
   
   utter_niederlassung_details:
-  - text: "Axxessio hat zwei Niederlassungen in Deutschland Haupsitz in Bonn und Niederlassung im Darmstadt."
+  - text: "Axxessio hat zwei Niederlassungen in Deutschland. Haupsitz in Bonn und Niederlassung im Darmstadt."
   
   utter_location_question:
-  - text: "Brauchen Sie die Addresse?"
-  - text: "Möchten Sie die Adresse wissen?"
+  - buttons:
+    - payload: "Konfirm"
+      title: "Ja"
+      
+    - title: "nict konfirm"
+      payload: "Nein"
+      
+    text: "Möchten Sie die Adresse wissen?"
   
   utter_location_Bonn:
   - text: "Die Addresse für Haupsitz ist: Kurfürstenallee 5 • 53177 Bonn"
@@ -154,6 +175,7 @@ responses:
 
 actions:
   - action_show_location_address
+  - action_show_both_address
   - action_show_client_category
   - action_show_customer
   - action_show_employee

@@ -24,3 +24,8 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+
+- rule: Ran into trouble
+  steps:
+  - action: utter_problem_answering
+  - action: utter_thankyou_anything_else
